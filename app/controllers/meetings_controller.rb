@@ -2,7 +2,15 @@ class MeetingsController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index 
-        render json: Meeting.all
+        if params[:teacher_id]
+            teacher = Teacher.find(params[:teacher_id])
+            student = Student.find(params[:student_id])
+            # create custom model method to find meeting --> meetings = Meeting.where ... teacher_id && student_id ... etc.
+            # also, order meetings by date
+          else
+            meetings = Meeting.all
+          end
+          render json: meetings
     end
 
     def create 
