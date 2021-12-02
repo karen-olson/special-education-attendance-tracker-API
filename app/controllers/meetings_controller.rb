@@ -3,10 +3,11 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index 
         if params[:teacher_id]
-            teacher = Teacher.find(params[:teacher_id])
-            student = Student.find(params[:student_id])
-            # create custom model method to find meeting --> meetings = Meeting.where ... teacher_id && student_id ... etc.
-            # also, order meetings by date
+            # teacher = Teacher.find(params[:teacher_id])
+            # student = Student.find(params[:student_id])
+            # # create custom model method to find meeting --> meetings = Meeting.where ... teacher_id && student_id ... etc.
+            # # also, order meetings by date
+            meetings = Meeting.all
           else
             meetings = Meeting.all
           end
