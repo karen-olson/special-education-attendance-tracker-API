@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'index#students'
   resources :meetings
   resources :students, only: [:index]
   resources :teachers, only: [:index, :show] do 
