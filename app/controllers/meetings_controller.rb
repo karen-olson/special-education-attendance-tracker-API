@@ -2,12 +2,8 @@ class MeetingsController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index 
-        if params[:teacher_id]
-            # teacher = Teacher.find(params[:teacher_id])
-            # student = Student.find(params[:student_id])
-            # # create custom model method to find meeting --> meetings = Meeting.where ... teacher_id && student_id ... etc.
-            # # also, order meetings by date
-            meetings = Meeting.all
+        if meeting_params[:teacher_id]
+            meetings = Meeting.teacher_student_meetings(meeting_params[:teacher_id], meeting_params[:student_id])
           else
             meetings = Meeting.all
           end
