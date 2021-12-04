@@ -9,6 +9,7 @@ class Meeting < ApplicationRecord
     end
 
     def formatted_date
+        # byebug
         self.date.strftime("%b %d, %Y")
     end
 end
