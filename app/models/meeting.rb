@@ -2,7 +2,6 @@ class Meeting < ApplicationRecord
     belongs_to :student 
     belongs_to :teacher 
 
-    validates :duration, presence: true
     validates :date, presence: :true
 
     def self.teacher_student_meetings(teacher_id, student_id)
