@@ -1,24 +1,9 @@
-# README
+# Special Education Attendance Tracker API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A mock REST API created using Ruby on Rails. 
 
-Things you may want to cover:
+- [Deployed API](https://frozen-oasis-63947.herokuapp.com/)
+- [Special Education Attendance Tracker app](https://special-education-attendance-tracker.netlify.app/)
+- [Frontend repo](https://github.com/karen-olson/special-education-attendance-tracker).
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version: ruby-2.7.4
