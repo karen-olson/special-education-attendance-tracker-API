@@ -1,6 +1,6 @@
 # Special Education Attendance Tracker API
 
-A mock REST API created using Ruby on Rails (version 2.7.4)
+A REST API created using Ruby on Rails (version 2.7.4)
 
 - [Deployed API](https://frozen-oasis-63947.herokuapp.com/)
 - [Special Education Attendance Tracker app](https://special-education-attendance-tracker.netlify.app/)
